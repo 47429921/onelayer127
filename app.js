@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`由 ${client.user.tag} 登入!`);
-  client.user.setActivity('即將完成', { type: 'WATCHING' })
+  client.user.setActivity('歡迎使用咖啡廳機器人', { type: 'PLAYING' })
   .then(presence => console.log(`目前遊玩 ${presence.game ? presence.game.name : 'none'}`))
   .catch(console.error);
 });
