@@ -348,7 +348,7 @@ client.on('message' , function (message){
         var roll =(Math.floor(Math.random()*6)+1);
         if (roll == 1)
         {
-            message.channel.send('大麻趴!! :herb:  :herb:  :herb: :herb: :herb: :herb: :herb: :herb:');
+            message.channel.send('大麻趴!! :weed: :weed: :weed: :weed: :weed: :weed: :weed: :weed:');
         }
 		
 		if (roll == 2)
@@ -358,26 +358,26 @@ client.on('message' , function (message){
 		
 		if (roll == 3)
         {
-            message.channel.send(':herb: 來 :herb: 給你 :herb:');
+            message.channel.send(':weed: 來 :weed: 給你 :weed:');
         }
 		
 		if (roll == 4)
         {
-            message.channel.send("菜單   大麻*1 :herb: 87比特幣    大麻一打 5487 比特幣  OuO一個 OuO元   特別活動   只要是 幫 只是一隻雞#7983 或本人來買可享 0.087折優惠  :herb:");
+            message.channel.send("菜單   大麻*1 :weed: 87比特幣    大麻一打 5487 比特幣  OuO一個 OuO元   特別活動   只要是 幫 只是一隻雞#7983 或本人來買可享 0.087折優惠  :weed:");
         }
 		
 		if (roll == 5)
         {
-            message.channel.send('OuO 沒了~:herb:');
+            message.channel.send('OuO 沒了~:weed:');
         }
 		
 		if (roll == 6)
         {
-            message.channel.send('在冷氣口那OuO  :herb:');
+            message.channel.send('在冷氣口那OuO  :weed:');
         }
 	console.log('有人吸食了??');
     }
 })
 
 
-client.login('NjAzOTM4NDg0NzgwMTM4NDk3.XU5ZtQ.-TKhUurhLIc7goWmgciOv7gucpw');
+client.login('NjAzOTM4NDg0NzgwMTM4NDk3.XU5sMw.42JJq4zynyswVvb4sk4CIvvbyAU');
