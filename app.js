@@ -380,4 +380,4 @@ client.on('message' , function (message){
 })
 
 
-client.login('process.env.NjAzOTM4NDg0NzgwMTM4NDk3.XU5ZtQ.-TKhUurhLIc7goWmgciOv7gucpw');
+client.login('NjAzOTM4NDg0NzgwMTM4NDk3.XU5ZtQ.-TKhUurhLIc7goWmgciOv7gucpw');
