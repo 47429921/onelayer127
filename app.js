@@ -380,4 +380,4 @@ client.on('message' , function (message){
 })
 
 
-client.login('process.env.NjAzOTM4NDg0NzgwMTM4NDk3.XUO9GQ.C8pW-r9Q3NLxPuTG9FcUMEsKDGA');
+client.login('process.env.bot_token');
