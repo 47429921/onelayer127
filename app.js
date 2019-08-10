@@ -11,15 +11,15 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === '!about') {
-    msg.reply('你好我是咖啡廳機器人目前指令有:!drink !sweet !meal !sleep !lotery 還有一個 ||隱藏指令OuO|| made by @青楓OuO#5224 ');
-	console.log('有人正在測試');
+    msg.reply('你好,我是咖啡廳機器人目前指令有:!drink !sweet !meal !sleep !about !sea 還有兩個 ||隱藏指令OuO|| made by @青楓OuO#5224 ');
+	
   }
 });
 
 client.on('message', msg => {
   if (msg.content === '!sea') {
-    msg.reply(' 【一層海港城】 /warp OneLayer121 目前城內設有【礦車式豬人經驗塔】以及【二分流黑橡木伐木場】等公共設施供玩家們使用。==================================【公設使用規定】１.經驗塔若使用完畢，敬請下車後再離開。切勿直接下線導致礦車遺失。若違反規定，經查獲後將拉至黑名單。２.下車後請勿在經驗塔內逗留。此舉將會影響到下位使用者的權益。若違反規定，經查獲後將會請離領地。３.使用伐木場時，請將樹木的原木部分砍伐乾淨。若違反規定使樹木無法重生，經查獲將拉至黑名單。==================================以上幾點規定，懇請各位配合，感謝！ :cake:');
-  console.log('有人正在測試');
+    msg.reply(' 【一層海港城】 /warp OneLayer121 目前城內設有【礦車式豬人經驗塔】以及【二分流黑橡木伐木場】等公共設施供玩家們使用。                       【公設使用規定】１.經驗塔若使用完畢，敬請下車後再離開。切勿直接下線導致礦車遺失。若違反規定，經查獲後將拉至黑名單。２.下車後請勿在經驗塔內逗留。此舉將會影響到下位使用者的權益。若違反規定，經查獲後將會請離領地。３.使用伐木場時，請將樹木的原木部分砍伐乾淨。若違反規定使樹木無法重生，經查獲將拉至黑名單。==================================以上幾點規定，懇請各位配合，感謝！ :cake:');
+  
   }
 });
 
@@ -27,14 +27,14 @@ client.on('message', msg => {
 	if (msg.content === '!invites') {
 		msg.channel.send('本群邀請連結:https://discord.gg/gzYRc4u')
 		console.log('本群邀請連結已生成');
-		console.log('有人正在測試');
+		
 	}
 });
 
 client.on('message', msg => {
 	if (msg.content === '!sleep') {
 		msg.reply('要離開咖啡廳了! 歡迎下次光臨OuO')
-		console.log('有人正在測試');
+		
 	}
 });
 
@@ -42,15 +42,7 @@ client.on('message', msg => {
 	if (msg.content === '!botinvite') {
 		msg.channel.send('機器人邀請連結(請勿作為營利手段):https://discordapp.com/oauth2/authorize?client_id=8&scope=bot')
 		console.log('bot invite 已產生');
-		console.log('有人正在測試');
-	}
-});
-
-client.on('message', msg => {
-	if (msg.content === '!point') {
-msg.channel.send("你的號碼為" + Math.floor(Math.random() * 50 + 100 ));
-   console.log('號碼已生成');
-   console.log('有人正在測試');
+		
 	}
 });
 
@@ -232,7 +224,7 @@ client.on('message' , function (message){
 client.on('message' , function (message){
     if (message.content == '!sweet') 
     {
-        var roll =(Math.floor(Math.random()*16)+1);
+        var roll =(Math.floor(Math.random()*15)+1);
         if (roll == 1)
         {
             message.channel.send('甜點來了AuA :popcorn: ');
@@ -315,5 +307,77 @@ client.on('message' , function (message){
        
     }
 })
+
+client.on('message' , function (message){
+    if (message.content == '!OneLayer121') 
+    {
+        var roll =(Math.floor(Math.random()*5)+1);
+        if (roll == 1)
+        {
+            message.channel.send('一層發動:蛋糕攻擊:cake: :cake: :cake: :cake: 你受到了87點傷害');
+        }
+		
+		if (roll == 2)
+        {
+            message.channel.send('你使用了:偷吃蛋糕攻擊 :fork_knife_plate: 一層發怒 你受到了87000點傷害');
+        }
+		
+		if (roll == 3)
+        {
+            message.channel.send('一層發動:黑名單攻擊 您暫停一回合');
+        }
+		
+		if (roll == 4)
+        {
+            message.channel.send('你輸了QQ');
+        }
+		
+		if (roll == 5)
+        {
+            message.channel.send('您使用外掛攻擊 你贏了!!!!');
+        }
+		
+	
+    }
+})
+
+
+client.on('message' , function (message){
+    if (message.content == '!weed') 
+    {
+        var roll =(Math.floor(Math.random()*6)+1);
+        if (roll == 1)
+        {
+            message.channel.send('大麻趴!! :herb:  :herb:  :herb: :herb: :herb: :herb: :herb: :herb:');
+        }
+		
+		if (roll == 2)
+        {
+            message.channel.reply('不好意思 請先給我們看身分證');
+        }
+		
+		if (roll == 3)
+        {
+            message.channel.send(':herb: 來 :herb: 給你 :herb:');
+        }
+		
+		if (roll == 4)
+        {
+            message.channel.send("菜單   大麻*1 :herb: 87比特幣    大麻一打 5487 比特幣  OuO一個 OuO元   特別活動   只要是 幫 只是一隻雞#7983 或本人來買可享 0.087折優惠  :herb:");
+        }
+		
+		if (roll == 5)
+        {
+            message.channel.send('OuO 沒了~:herb:');
+        }
+		
+		if (roll == 6)
+        {
+            message.channel.send('在冷氣口那OuO  :herb:');
+        }
+	console.log('有人吸食了??');
+    }
+})
+
 
 client.login('process.env.NjAzOTM4NDg0NzgwMTM4NDk3.XUO9GQ.C8pW-r9Q3NLxPuTG9FcUMEsKDGA');
