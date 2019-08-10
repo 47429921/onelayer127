@@ -376,7 +376,6 @@ client.on('message' , function (message){
             message.channel.send('在冷氣口那OuO  :herb:');
         }
 	console.log('有人吸食了??');
-	    .catch(console.error);
     }
 })
 
