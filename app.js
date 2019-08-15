@@ -4,22 +4,22 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`由 ${client.user.tag} 登入!`);
-  client.user.setActivity('歡迎使用咖啡廳機器人', { type: 'PLAYING' })
+  client.user.setActivity('歡迎使用 make by 青楓OuO#5224', { type: 'PLAYING' })
   .then(presence => console.log(`目前遊玩 ${presence.game ? presence.game.name : 'none'}`))
   .catch(console.error);
 });
 
 client.on('message', msg => {
   if (msg.content === '!about') {
-    msg.reply('你好,我是咖啡廳機器人目前指令有:!drink !sweet !meal !sleep !about !sea 還有兩個 ||隱藏指令OuO|| made by @青楓OuO#5224 ');
-	
+	  msg.reply('你好,我是咖啡廳機器人目前指令有:!drink !sweet !meal !sleep !about !sea 還有兩個 ||隱藏指令OuO|| made by @青楓OuO#5224 ');
+	msg.delete (10000);
   }
 });
 
 client.on('message', msg => {
   if (msg.content === '!sea') {
     msg.reply(' 【一層海港城】 /warp OneLayer121 目前城內設有【礦車式豬人經驗塔】以及【二分流黑橡木伐木場】等公共設施供玩家們使用。                       【公設使用規定】１.經驗塔若使用完畢，敬請下車後再離開。切勿直接下線導致礦車遺失。若違反規定，經查獲後將拉至黑名單。２.下車後請勿在經驗塔內逗留。此舉將會影響到下位使用者的權益。若違反規定，經查獲後將會請離領地。３.使用伐木場時，請將樹木的原木部分砍伐乾淨。若違反規定使樹木無法重生，經查獲將拉至黑名單。==================================以上幾點規定，懇請各位配合，感謝！ :cake:');
-  
+  msg.delete (10000);
   }
 });
 
@@ -50,7 +50,7 @@ client.on('message', msg => {
 client.on('message' , function (message){
     if (message.content == '!drink') 
     {
-        var roll =(Math.floor(Math.random()*16)+1);
+        var roll =(Math.floor(Math.random()*17)+1);
         if (roll == 1)
         {
             message.channel.send('你的飲料來了:beer:');
@@ -128,7 +128,7 @@ client.on('message' , function (message){
 		
        if (roll == 17)
         {
-            message.channel.send('發生未知錯誤 請私訊 青楓OuO#5224');
+            message.channel.send('你在黑名單中所以... OuO');
         }
     }
 })
@@ -348,36 +348,211 @@ client.on('message' , function (message){
         var roll =(Math.floor(Math.random()*6)+1);
         if (roll == 1)
         {
-            message.channel.send('大麻趴!! :weed: :weed: :weed: :weed: :weed: :weed: :weed: :weed:');
+            message.channel.send('大麻趴!! :herb:  :herb:  :herb: :herb: :herb: :herb: :herb: :herb:');
         }
 		
 		if (roll == 2)
         {
-            message.channel.reply('不好意思 請先給我們看身分證');
+            message.channel.send('不好意思 請先給我們看身分證');
         }
 		
 		if (roll == 3)
         {
-            message.channel.send(':weed: 來 :weed: 給你 :weed:');
+            message.channel.send(':herb: 來 :herb: 給你 :herb:');
         }
 		
 		if (roll == 4)
         {
-            message.channel.send("菜單   大麻*1 :weed: 87比特幣    大麻一打 5487 比特幣  OuO一個 OuO元   特別活動   只要是 幫 只是一隻雞#7983 或本人來買可享 0.087折優惠  :weed:");
+            message.channel.send("菜單   大麻*1 :herb: 87比特幣    大麻一打 5487 比特幣  OuO一個 OuO元   特別活動   只要是 幫 只是一隻雞#7983 或本人來買可享 0.087折優惠  :herb:");
         }
 		
 		if (roll == 5)
         {
-            message.channel.send('OuO 沒了~:weed:');
+            message.channel.send('OuO 沒了~ :herb:');
         }
 		
 		if (roll == 6)
         {
-            message.channel.send('在冷氣口那OuO  :weed:');
-        }
+            message.channel.send('在冷氣口那OuO  :herb:');
+		} 
 	console.log('有人吸食了??');
+	
+    }
+})
+
+client.on('message', msg => {
+	if (msg.content === '!cafehelp') {
+		msg.channel.send('已尋求幫助 請稍後片刻')
+		console.log('尋求幫助.');
+		
+	}
+});
+
+client.on('message', msg => {
+	if (msg.content === '!seahelp') {
+		msg.channel.send('已尋求幫助 請先打出您需要蓋什麼東西 稍後片刻')
+		console.log('尋求建築幫助.');
+		
+	}
+});
+
+client.on('message', msg => {
+	if (msg.content === '!restart') {
+		msg.channel.send('準備重開 套用新設定')
+		msg.delete (10);
+		console.log('重開準備');
+	}
+});
+
+client.on('message' , function (message){
+    if (message.content == '!test') 
+    {
+        var OuO =(Math.floor(Math.random()*1)+1);
+        if (OuO == 1)
+        {
+            message.channel.send('lose! :cry:');
+        }
+		
+		else
+	    {
+			message.channel.send('safe!:tada:');
+		}	
+	
+    }
+})
+
+client.on('message' , function (message){
+    if (message.content == '!lottery') 
+    {
+        var roll =(Math.floor(Math.random()*26)+1);
+        if (roll == 1)
+        {
+            message.channel.send('請再抽一次 :ticket:');
+        }
+		
+		if (roll == 2)
+        {
+            message.channel.send('來! 銘謝惠顧');
+        }
+		
+		if (roll == 3)
+        {
+            message.channel.send('來! 銘謝惠顧');
+        }
+		
+		if (roll == 4)
+        {
+            message.channel.send('來! 銘謝惠顧');
+        }
+		
+		if (roll == 5)
+        {
+           message.channel.send('來! 銘謝惠顧:ticket:');
+        }
+		
+		if (roll == 6)
+        {
+            message.channel.send('來! 銘謝惠顧');
+        }
+		
+		if (roll == 7)
+        {
+            message.channel.send('來! 銘謝惠顧');
+        }
+		
+       		if (roll == 8)
+        {
+            message.channel.send('再抽一次OuO');
+        }
+		
+       		if (roll == 9)
+        {
+            message.channel.send('你中了安慰獎 小台灣國旗 :flag_tw:');
+        }
+		
+       		if (roll == 10)
+        {
+            message.channel.send('你中了安慰獎 小台灣國旗 :flag_tw:');
+        }
+		
+       		if (roll == 11)
+        {
+            message.channel.send('你中了安慰獎 小台灣國旗 :flag_tw:');
+        }
+		
+       		if (roll == 13)
+        {
+            message.channel.send('你中了安慰獎 小台灣國旗 :flag_tw:');
+        }
+		
+       		if (roll == 14)
+        {
+            message.channel.send('你中了5獎 :calendar:');
+        }
+		
+       		if (roll == 15)
+        {
+            message.channel.send('你中了5獎 :calendar:');
+        }
+		
+       		if (roll == 16)
+        {
+            message.channel.send('你中了5獎 :calendar:');
+        }
+		
+		if (roll == 17)
+        {
+            message.channel.send('你中了4獎 一大張海報 (・∀・)');
+        }
+       
+	   
+		if (roll == 18)
+        {
+            message.channel.send('你中了4獎 一大張海報 (・∀・)');
+        }
+       
+		if (roll == 19)
+        {
+            message.channel.send('你中了4獎 一大張海報 (・∀・)');
+        }
+       
+		if (roll == 20)
+        {
+            message.channel.send('你中了4獎 一大張海報 (・∀・)');
+        }
+       
+		if (roll == 21)
+        {
+            message.channel.send('你中了3獎 8.7塊 “一層蛋糕” :cake:');
+        }
+       
+		if (roll == 22)
+        {
+            message.channel.send('你中了3獎 8.7塊 “一層蛋糕” :cake:');
+        }
+       
+		if (roll == 23)
+        {
+            message.channel.send('你中了3獎 8.7塊 “一層蛋糕” :cake:');
+        }
+       
+		if (roll == 24)
+        {
+            message.channel.send('你中了2獎 :koala:娃娃一個(這...是娃娃嗎)');
+        }
+       
+	   if (roll == 25)
+        {
+            message.channel.send('你中了2獎 :koala:娃娃一個(這...是娃娃嗎)');
+        }
+       
+	   if (roll == 26)
+        {
+            message.channel.send('你中了大獎 一層的擁抱 和一個已經被用掉的東西  https://discord.gift/39R8wKhB9NBESWtz');
+        }
+       
     }
 })
 
 
-client.login('NjAzOTM4NDg0NzgwMTM4NDk3.XU5tyA.udiJpo48N5NakYAwudCoT8Ro7aw');
+client.login('NjAzOTM4NDg0NzgwMTM4NDk3.XU5vMA.4iFNv0CSVruR-NOvdKS_SSqBLqg');
