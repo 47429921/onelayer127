@@ -555,4 +555,4 @@ client.on('message' , function (message){
 })
 
 
-client.login('NjAzOTM4NDg0NzgwMTM4NDk3.XU5vMA.4iFNv0CSVruR-NOvdKS_SSqBLqg');
+client.login('process.env.BOT_TOKEN');
